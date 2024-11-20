@@ -1,0 +1,17 @@
+.navbar-brand{
+    background-color: brown;
+    padding: 10px;
+    color: wheat;
+}
+.nav-item{
+    background-color: skyblue;
+    padding: 10px;
+    
+}
+hr {
+    border: none; 
+    height: 5px; 
+    background-color: black;
+    border-radius: 5px; 
+    
+  }

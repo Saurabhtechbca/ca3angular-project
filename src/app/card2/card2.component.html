@@ -1,0 +1,25 @@
+<div class="offers-section" style="margin-left: 100px;">
+  <h2>Offers</h2>
+  <div class="offers-container">
+    <div class="offer-card" *ngFor="let offer of offers">
+      <img [src]="offer.imageUrl" [alt]="offer.altText" class="offer-image">
+      <h3>{{ offer.title }}</h3>
+      <p>{{ offer.description }}</p>
+      <p class="price">Price: ₹{{ offer.price }}</p>
+      <a [href]="offer.link" target="_blank">View Offer</a>
+    </div>
+  </div>
+</div>
+
+<div class="new-arrivals-section" style="margin-left: 100px;">
+  <h2>New Arrivals</h2>
+  <div class="new-arrivals-container">
+    <div class="new-arrival-card" *ngFor="let item of newArrivals">
+      <img [src]="item.imageUrl" [alt]="item.altText" class="new-arrival-image">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <p class="price">Price: ₹{{ item.price }}</p>
+      <a [href]="item.link" target="_blank">View Product</a>
+    </div>
+  </div>
+</div>
